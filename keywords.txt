@@ -1,0 +1,3 @@
+ColorDetector	KEYWORD1
+ColorD		KEYWORD2
+detectColor	KEYWORD2
