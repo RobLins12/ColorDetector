@@ -14,7 +14,8 @@
   #color blue = 2
   #color green = 3
   #none = -1 
- */
+  
+*/
  
 #include <ColorDetector.h>
 
@@ -31,7 +32,17 @@ void setup() {
 }
 
 void loop() {
-  int cor = sensor.detectColor();
-  Serial.println("Color code = ")
-  Serial.print(cor);
+  int color = sensor.detectColor();
+  Serial.print("Color code = ");
+  Serial.print(color);
+  if(color == 1){
+    Serial.println(" Vermelho");
+  }
+  if(color == 2){
+    Serial.println(" Azul");
+  }
+  if(color == 3){
+    Serial.println(" Verde");
+  }    
+  delay(100);
 }
