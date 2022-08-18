@@ -1,12 +1,15 @@
 /*
   
-  ColorDetector example
+  ColorDetector cpp:
+  
   Autor: Robson C. Lins Júnior 
   17 agosto de 2022
 
  */
 
 #include "ColorDetector.h"
+
+//Global variables
 
 int red;
 int green;
@@ -44,19 +47,19 @@ int ColorD::detectColor(){
   //count OUT, pGreen, GREEN
   green = pulseIn(Dout, digitalRead(Dout) == HIGH ? LOW : HIGH);
 
-  //Verifica se a cor vermelha foi detectada
+  //Check if red was detected
   if (red < blue && red < green && red < 500)
   {
     return 1;
   }
  
-  //Verifica se a cor azul foi detectada
+  //Check if blue was detected
   else if (blue < red && blue < green && blue < 1000)
   {
     return 2;
   }
  
-  //Verifica se a cor verde foi detectada
+  //Check if green was detected
   else if (green < red && green < blue)
   {
     return 3;

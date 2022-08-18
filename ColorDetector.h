@@ -1,6 +1,7 @@
 /*
   
-  ColorDetector example
+  ColorDetector header:
+  
   Autor: Robson C. Lins Júnior 
   17 agosto de 2022
 
