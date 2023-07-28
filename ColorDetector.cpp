@@ -48,7 +48,7 @@ int ColorD::detectColor(){
   green = pulseIn(Dout, digitalRead(Dout) == HIGH ? LOW : HIGH);
 
   //Check if red was detected
-  if (red < blue && red < green && red < 500)
+  if (red < blue && red < green && red < 100)
   {
     return 1;
   }
